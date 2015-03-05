@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/dialog_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="42sp"
+        android:text="You won!"/>
+
+    <TableLayout
+        android:id="@+id/dialog_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_result"
+        android:layout_marginTop="12dp"
+        android:stretchColumns="0,1"
+        android:gravity="center_horizontal">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="You" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Computer" />
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:id="@+id/dialog_icon_you"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_paper" />
+            <ImageView
+                android:id="@+id/dialog_icon_comp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_paper" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/dialog_button_ok"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_icons"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="OK" />
+
+</RelativeLayout>

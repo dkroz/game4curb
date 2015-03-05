@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Game4Curb</string>
+
+    <string name="label_move">Your move!</string>
+    <string name="label_rock">Rock</string>
+    <string name="label_paper">Paper</string>
+    <string name="label_scissors">Scissors</string>
+
+    <string name="action_history">Show History</string>
+    <string name="action_clear">Clear History</string>
+
+    <string name="url_rock">http://roshambo.herokuapp.com/throws/rock</string>
+    <string name="url_paper">http://roshambo.herokuapp.com/throws/paper</string>
+    <string name="url_scissors">http://roshambo.herokuapp.com/throws/scissors</string>
+
+</resources>
